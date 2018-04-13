@@ -1,0 +1,31 @@
+﻿<html>
+<head>
+
+<script src="jquery-3.3.1.js"></script>
+<style>
+#mybutton{border-radius:30px;}
+#OnFire{float:right;}
+</style>
+</head>
+<body>
+<div id="Onfire">
+<h2 id="yala">My Schedule</h2>
+<button id="mybutton"><b>+</b></button>
+<input type="text" id="boy"></input>
+<div id="result"></div>
+</div>
+</body>
+<script>
+var s1=$("#boy").val();
+function Deal(){
+var s1=$("#boy").val();
+$("#result").append("<li>"+s1+"</li>");
+$("#boy").remove(s1);
+$("#boy").val(""); 
+$("#result").find(result[0]);
+}
+$("#mybutton").click(Deal);
+
+ 
+ </script>
+ </html> 
