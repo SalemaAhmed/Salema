@@ -1,0 +1,65 @@
+﻿<html>
+<head>
+<script src="jquery-3.3.1.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Cairo|Roboto" rel="stylesheet"></link>
+  <style>
+  #yala{font-family: 'Cairo', sans-serif, 'Roboto', sans-serif;}
+  #boy{border-radius:40px;padding:5px;}
+  #hoba{border-radius:40px;padding:5px;}
+  #bylove{float:left;}
+  </style>
+</head>
+<body>
+<h1><b id="yala">Enter a Number!</b></h1>
+<div id="bylove">
+<button id="boy"><b>Show Data</b></button>
+<button id="hoba"><b>Show Result</b></button>
+<br></br>
+<input type="number" id="run"></input>
+<div id="result"></div>
+</div>
+</body>
+<script>
+var s=$("#run").val();
+var d= [];
+	function m(){
+var s=$("#run").val();
+$("#result").append("<li>"+s+"</li>");
+$("#run").remove(s);
+$("#run").val("");
+d.push(s);}
+$("#boy").click(m);
+
+
+var d=[];
+var k=0; 
+var f=0; 
+var h=1; 
+var max=0;
+var min=d[0];
+function w(){
+while (k<=10){
+if (d[k]>max){
+max=d[k];}
+else{}
+k=k+1; 
+}
+while (f<10){
+ if(d[f]<d[h]){
+min=d[f];
+}
+else{}
+if (d[f]>d[h]){
+min=d[h];
+}
+else{}
+f=f+1;
+h=h+1;
+}
+document.write(max);
+document.write("<br></br>");
+document.write(min);} 
+
+$("#hoba").click(w);
+</script>
+</html>
